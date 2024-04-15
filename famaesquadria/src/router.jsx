@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom"
 
-import Header from './pages/Components/Header'
 import Home from './pages/Home'
 import Portas from './pages/Portas'
 import Janelas from './pages/Janelas'
