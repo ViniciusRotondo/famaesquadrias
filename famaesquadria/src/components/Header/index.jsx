@@ -6,7 +6,7 @@ const Header = () => {
   const [menuOpn, setMenuOpn] = useState(false);
 
   return (
-      <nav className="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-400 shadow">
+      <nav className="bg-gradient-to-r from-blue-100 via-blue-200 to-gray-300 shadow-xl">
         <div className="max-w-full mx-auto px-8 sm:px-10 lg:px-10">
           <div className="flex items-center justify-between h-28">
             <div className="flex items-center">
