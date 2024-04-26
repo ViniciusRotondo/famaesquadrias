@@ -20,9 +20,11 @@ const Home = () => {
                 <p className="font-normal text-gray-600 dark:text-gray-400">
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
-                <Button color='blue' pill>
-                    Ver mais
-                </Button>
+                    <Button color='blue' pill >
+                    <a href='famaesquadrias/janelas'>
+                            Ver mais
+                        </a>
+                    </Button>
             </Card>
 
             <Card
