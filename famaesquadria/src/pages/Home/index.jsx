@@ -21,7 +21,7 @@ const Home = () => {
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
                     <Button color='blue' pill >
-                    <a href='famaesquadrias/janelas'>
+                    <a href='/famaesquadrias/janelas'>
                             Ver mais
                         </a>
                     </Button>
