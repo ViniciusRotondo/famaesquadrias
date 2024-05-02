@@ -11,6 +11,8 @@ const FooterFama = () => {
           <Footer.Title title="contato"  className="text-white"/>
               <Footer.LinkGroup col className="text-white">
                 <Footer.Link href="#">comercial@famaesquadria.com.br</Footer.Link>
+                <p>4496-3165</p>
+                <a href='https://api.whatsapp.com/send?phone=5511947235282' target='blank'>(11)94723-5282</a>
                 <div className="flex flex-row">
                   <Footer.Link href="#"><InstagramIcon /></Footer.Link>
                   <Footer.Link href="#"><FacebookIcon /></Footer.Link>
