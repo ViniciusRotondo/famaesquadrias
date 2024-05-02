@@ -14,7 +14,7 @@ const Router = () => {
             <Routes>
                 <Route 
                     exact
-                    path="/famaesquadrias" 
+                    path="/famaesquadrias/" 
                     element={<Home />}
                     />
                 <Route 
