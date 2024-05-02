@@ -18,23 +18,23 @@ const Router = () => {
                     element={<Home />}
                     />
                 <Route 
-                    path="famaesquadrias/portas" 
+                    path="/famaesquadrias/portas" 
                     element={<Portas />}
                     />
                 <Route 
-                    path="famaesquadrias/janelas" 
+                    path="/famaesquadrias/janelas" 
                     element={<Janelas />}
                     />
                 <Route 
-                    path="famaesquadrias/portoes" 
+                    path="/famaesquadrias/portoes" 
                     element={<Portoes />}
                     />
                 <Route 
-                    path="famaesquadrias/guarda-corpos" 
+                    path="/famaesquadrias/guarda-corpos" 
                     element={<GuardaCorpos />}
                     />
                 <Route 
-                    path="famaesquadrias/espelhos" 
+                    path="/famaesquadrias/espelhos" 
                     element={<Espelhos />}
                     />
             </Routes>
