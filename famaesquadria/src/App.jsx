@@ -6,9 +6,7 @@ import FooterFama from "./components/FooterFama"
 function App() {
   return (
     <>
-      <Header />
         <Router />
-      <FooterFama />
     </>  
   )
 }

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import imgFama from "/fama.svg";
 import DropButton from '../Dropbutton'
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
   const [menuOpn, setMenuOpn] = useState(false);
-  const [serviceOpn, setServiceOpn] = useState(false)
 
   return (
     <>
@@ -13,16 +13,16 @@ const Header = () => {
         <div className="max-w-full mx-auto px-8 sm:px-10 lg:px-10">
           <div className="flex items-center justify-between h-28">
             <div className="flex items-center">
-              <a href="/famaesquadrias/" className="flex-shrink-0">
+              <Link to='/' className="flex-shrink-0">
                 <img className="h-32 w-32" src={imgFama} alt="Logotipo fama" />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:block">
                 <div className="flex items-baseline space-x-6">
-                  <a href="/famaesquadrias" className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out ">Início</a>
+                  <Link to="/famaesquadrias" className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out ">Início</Link>
                   <DropButton />
-                  <a href="#" className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out">Sobre nós</a>
-                  <a href='https://api.whatsapp.com/send?phone=5511947235282' target='blank' className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out">Orçamento</a>
+                  <Link to="#" className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out">Sobre nós</Link>
+                  <Link to='https://api.whatsapp.com/send?phone=5511947235282' target='blank' className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out">Orçamento</Link>
                 </div>
               </div>
             <div className="mr-2 flex md:hidden">
@@ -36,8 +36,8 @@ const Header = () => {
         </div>
           {menuOpn == true ? (
           <div className="px-2 pt-2 pb-3 sm:px-3">
-            <a href="/famaesquadrias" className="text-blue-950 hover:text-blue-400 hover:bg-white block px-3 py-2 rounded-md text-base font-medium transition duration-500 ease-in-out" onClick={() => setMenuOpn(!menuOpn)}>Início</a>
-            <a href='https://api.whatsapp.com/send?phone=5511947235282' target='blank' className="text-blue-950 hover:text-blue-400 hover:bg-white block px-3 py-2 rounded-md text-base font-medium transition duration-500 ease-in-out" onClick={() => setMenuOpn(!menuOpn)}>Orçamento</a>
+            <Link to="/famaesquadrias" className="text-blue-950 hover:text-blue-400 hover:bg-white block px-3 py-2 rounded-md text-base font-medium transition duration-500 ease-in-out" onClick={() => setMenuOpn(!menuOpn)}>Início</Link>
+            <Link to='https://api.whatsapp.com/send?phone=5511947235282' target='blank' className="text-blue-950 hover:text-blue-400 hover:bg-white block px-3 py-2 rounded-md text-base font-medium transition duration-500 ease-in-out" onClick={() => setMenuOpn(!menuOpn)}>Orçamento</Link>
           </div>
           ): null}
         </nav>

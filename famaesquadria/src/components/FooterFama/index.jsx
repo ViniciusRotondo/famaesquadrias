@@ -1,6 +1,7 @@
 import { Footer } from "flowbite-react";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { Link } from "react-router-dom";
 
 const FooterFama = () => {
   return (
@@ -12,7 +13,7 @@ const FooterFama = () => {
               <Footer.LinkGroup col className="text-white">
                 <Footer.Link href="#">comercial@famaesquadria.com.br</Footer.Link>
                 <p>4496-3165</p>
-                <a href='https://api.whatsapp.com/send?phone=5511947235282' target='blank'>(11)94723-5282</a>
+                <Link href='https://api.whatsapp.com/send?phone=5511947235282' target='blank'>(11)94723-5282</Link>
                 <div className="flex flex-row">
                   <Footer.Link href="#"><InstagramIcon /></Footer.Link>
                   <Footer.Link href="#"><FacebookIcon /></Footer.Link>

@@ -3,11 +3,15 @@ import esquadriaImg from '/esquadriaImg.png'
 import janela from '/janela.png'
 import { Card, Button } from "flowbite-react";
 import { Footer } from "flowbite-react";
+import Header from "../../components/Header";
+import FooterFama from "../../components/FooterFama";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
     return(
         <>
+        <Header />
         <div className="p-16 flex gap-24 flex-wrap items-center justify-center" style={{backgroundImage: `url(${esquadriaImg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundAttachment: 'fixed'}}>
             <Card
             className="max-w-sm bg-gray-200 shadow border-none"
@@ -21,9 +25,9 @@ const Home = () => {
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
                     <Button color='blue' pill >
-                    <a href='/famaesquadrias/janelas'>
+                    <Link to='/famaesquadrias/janelas'>
                             Ver mais
-                        </a>
+                        </Link>
                     </Button>
             </Card>
 
@@ -39,9 +43,9 @@ const Home = () => {
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
                 <Button color='blue' pill>
-                    <a href='/famaesquadrias/portas'>
+                    <Link to='/famaesquadrias/portas'>
                         Ver mais
-                    </a>
+                    </Link>
                 </Button>
             </Card>
 
@@ -57,9 +61,9 @@ const Home = () => {
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
                 <Button color='blue' pill>
-                    <a href="/famaesquadrias/guarda-corpos">
+                    <Link to="/famaesquadrias/guarda-corpos">
                         Ver mais
-                    </a>
+                    </Link>
                 </Button>
             </Card>
 
@@ -75,9 +79,9 @@ const Home = () => {
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
                 <Button color='blue' pill>
-                    <a href="/famaesquadrias/portoes">
+                    <Link to="/famaesquadrias/portoes">
                         Ver mais
-                    </a>
+                    </Link>
                 </Button>
             </Card>
 
@@ -93,9 +97,9 @@ const Home = () => {
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
                 <Button color='blue' pill>
-                    <a href="/famaesquadrias/espelhos">
+                    <Link to="/famaesquadrias/espelhos">
                         Ver mais
-                    </a>
+                    </Link>
                 </Button>
             </Card>
         </div>
@@ -108,6 +112,7 @@ const Home = () => {
             Desde 2011, a Fama Esquadria de Alumínio tem sido a referência em qualidade e comprometimento no mercado de Itupeva e região. Com uma trajetória pautada pela excelência, estamos empenhados em oferecer soluções de alto padrão para atender às necessidades únicas de cada cliente. Nossa dedicação em fornecer produtos e serviços de qualidade superior nos destaca como líderes no setor, e estamos comprometidos em continuar superando as expectativas dos nossos clientes. 
             </p>
         </div>
+        <FooterFama />
         </>
     )
 }

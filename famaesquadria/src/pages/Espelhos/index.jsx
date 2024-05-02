@@ -3,6 +3,8 @@ import { Button } from "flowbite-react";
 import { useState } from 'react';
 import GalleryImage from '../../components/GalleryImage';
 import janela1 from '/janela1.png'
+import Header from '../../components/Header';
+import FooterFama from '../../components/FooterFama';
 
 
 const Espelhos = () => {
@@ -18,6 +20,7 @@ const Espelhos = () => {
     ])
     return(
         <>
+            <Header />
             <div className="flex items-center justify-center flex-col shadow-2xl" style={{backgroundImage: `url(${janelaImg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundAttachment: 'fixed'}}>
                 <h1 className='p-24 text-center text-gray-200 font-bold lg:text-7xl md:text-2xl sm:text-lg'>Espelhos</h1>
                 <Button color='gray'className='mb-24 shadow' href='https://api.whatsapp.com/send?phone=5511947235282' target='blank'>
@@ -28,6 +31,7 @@ const Espelhos = () => {
             <div className='text-center mt-30'>
                 <GalleryImage images={images}/>
             </div>
+            <FooterFama />
         </>
     )
 }
