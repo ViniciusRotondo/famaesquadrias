@@ -24,7 +24,7 @@ const GalleryImage = ({ images }) => {
             ))}
             {selectedImage && (
              <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center" onClick={closeModal}>
-                <img className="lg:w-2/5 lg:h-4/5 min-[320px]:w-4/5 min-[320px]:h-3/5 md:w-3/5 md:h-4/5 min-[1100px]:w-2/5 min-[1100px]:h-4/5" src={selectedImage.url} alt={selectedImage.title}></img>
+                <img className="lg:w-2/5 lg:h-4/5 min-[320px]:w-4/5 min-[320px]:h-2/5 md:w-3/5 md:h-4/5 min-[1100px]:w-2/5 min-[1100px]:h-4/5" src={selectedImage.url} alt={selectedImage.title}></img>
                 <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-90 p-5 rounded-xl shadow-blue-500">
                     <h2 className="mt-0 text-center text-blue-950 text-2xl mb-4">{selectedImage.title}</h2>
                     <Button className="px-5 py-2" color='gray' onClick={closeModal}>Close</Button>
