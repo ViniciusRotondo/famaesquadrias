@@ -1,6 +1,6 @@
 import janelaImg from '/janelaImg.png'
 import { Button } from "flowbite-react";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import GalleryImage from '../../components/GalleryImage';
 import janela1 from '/janela1.png'
 import Header from '../../components/Header';
@@ -18,6 +18,10 @@ const Espelhos = () => {
         {id: 7, url: './janela7.png' , title: 'Janela6'},
         {id: 8, url: './janela8.png' , title: 'Janela7'}
     ])
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return(
         <>
             <Header />

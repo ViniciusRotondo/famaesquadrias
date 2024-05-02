@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -29,67 +30,67 @@ export default function DropButton() {
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/famaesquadrias/janelas"
+                <Link
+                  to="/famaesquadrias/janelas"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                   Janelas
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/famaesquadrias/portas"
+                <Link
+                  to="/famaesquadrias/portas"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                   Portas
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/famaesquadrias/guarda-corpos"
+                <Link
+                  to="/famaesquadrias/guarda-corpos"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
                   Guarda-Corpos
-                </a>
+                </Link>
               )}
             </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                    <a
-                    href="/famaesquadrias/portoes"
+                    <Link
+                    to="/famaesquadrias/portoes"
                     className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                     )}
                     >
                     Portões
-                  </a>
+                  </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                    <a
-                  href="/famaesquadrias/espelhos"
+                    <Link
+                  to="/famaesquadrias/espelhos"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                     >
                     Espelhos
-                  </a>
+                  </Link>
                 )}
               </Menu.Item>
           </div>

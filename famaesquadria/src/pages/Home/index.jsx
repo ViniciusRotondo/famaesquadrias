@@ -1,14 +1,18 @@
-import React from "react";
+import { React, useEffect } from "react";
 import esquadriaImg from '/esquadriaImg.png'
 import janela from '/janela.png'
 import { Card, Button } from "flowbite-react";
 import { Footer } from "flowbite-react";
 import Header from "../../components/Header";
 import FooterFama from "../../components/FooterFama";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return(
         <>
         <Header />
@@ -24,11 +28,9 @@ const Home = () => {
                 <p className="font-normal text-gray-600 dark:text-gray-400">
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
-                    <Button color='blue' pill >
-                    <Link to='/famaesquadrias/janelas'>
+                    <NavLink to='/famaesquadrias/janelas' beha className="bg-blue-600 text-white text-center font-anton font-semibold p-2 rounded-lg text-lg hover:bg-blue-800 transition duration-500 ease-in-out ">
                             Ver mais
-                        </Link>
-                    </Button>
+                    </NavLink>
             </Card>
 
             <Card
@@ -42,11 +44,9 @@ const Home = () => {
                 <p className="font-normal text-gray-600 dark:text-gray-400">
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
-                <Button color='blue' pill>
-                    <Link to='/famaesquadrias/portas'>
+                <Link to='/famaesquadrias/portas' className="bg-blue-600 text-white text-center font-anton font-semibold p-2 rounded-lg text-lg hover:bg-blue-800 transition duration-500 ease-in-out ">
                         Ver mais
-                    </Link>
-                </Button>
+                </Link>
             </Card>
 
             <Card
@@ -60,11 +60,9 @@ const Home = () => {
                 <p className="font-normal text-gray-600 dark:text-gray-400">
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
-                <Button color='blue' pill>
-                    <Link to="/famaesquadrias/guarda-corpos">
+                <Link to="/famaesquadrias/guarda-corpos" className="bg-blue-600 text-white text-center font-anton font-semibold p-2 rounded-lg text-lg hover:bg-blue-800 transition duration-500 ease-in-out ">
                         Ver mais
-                    </Link>
-                </Button>
+                </Link>
             </Card>
 
             <Card
@@ -78,11 +76,9 @@ const Home = () => {
                 <p className="font-normal text-gray-600 dark:text-gray-400">
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
-                <Button color='blue' pill>
-                    <Link to="/famaesquadrias/portoes">
+                <Link to="/famaesquadrias/portoes" className="bg-blue-600 text-white text-center font-anton font-semibold p-2 rounded-lg text-lg hover:bg-blue-800 transition duration-500 ease-in-out ">
                         Ver mais
-                    </Link>
-                </Button>
+                </Link>
             </Card>
 
             <Card
@@ -96,14 +92,13 @@ const Home = () => {
                 <p className="font-normal text-gray-600 dark:text-gray-400">
                 Transforme sua casa com elegância e durabilidade. Nossas janelas de alumínio oferecem qualidade incomparável e design moderno para o seu lar.
                 </p>
-                <Button color='blue' pill>
-                    <Link to="/famaesquadrias/espelhos">
+                <Link to="/famaesquadrias/espelhos" className="bg-blue-600 text-white text-center font-anton font-semibold p-2 rounded-lg text-lg hover:bg-blue-800 transition duration-500 ease-in-out ">
                         Ver mais
-                    </Link>
-                </Button>
+                </Link>
             </Card>
         </div>
         <div className=" bg-gradient-to-r from-blue-100 via-gray-300 to-blue-100 shadow items-center justify-center sm:pl-4 sm:text-center min-[320px]:p-4">
+            <div className="ref-quem-somos"></div>
             <h1 className="font-bold text-blue-950 lg:text-6xl md:text-2xl sm:text-xl text-center p-8">
             QUEM SOMOS
             </h1>

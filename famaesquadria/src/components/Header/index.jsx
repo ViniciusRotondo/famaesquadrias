@@ -7,13 +7,24 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [menuOpn, setMenuOpn] = useState(false);
 
+  const scrollToQuemSomos = () => {
+    const quemSomosSection = document.querySelector(".ref-quem-somos");
+    if (quemSomosSection) {
+      const offset = 0;
+      window.scrollTo({
+        top: quemSomosSection.offsetTop - offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <nav className="bg-gradient-to-r from-blue-100 via-blue-200 to-gray-300 shadow-xl">
         <div className="max-w-full mx-auto px-8 sm:px-10 lg:px-10">
           <div className="flex items-center justify-between h-28">
             <div className="flex items-center">
-              <Link to='/' className="flex-shrink-0">
+              <Link to='/famaesquadrias' className="flex-shrink-0">
                 <img className="h-32 w-32" src={imgFama} alt="Logotipo fama" />
               </Link>
             </div>
@@ -21,7 +32,7 @@ const Header = () => {
                 <div className="flex items-baseline space-x-6">
                   <Link to="/famaesquadrias" className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out ">Início</Link>
                   <DropButton />
-                  <Link to="#" className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out">Sobre nós</Link>
+                  <Link to="#" onClick={scrollToQuemSomos} className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out">Sobre nós</Link>
                   <Link to='https://api.whatsapp.com/send?phone=5511947235282' target='blank' className="text-blue-950 hover:text-blue-400 hover:bg-white px-3 py-2 rounded-md text-sm font-medium transition duration-500 ease-in-out">Orçamento</Link>
                 </div>
               </div>
